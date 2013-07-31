@@ -1,4 +1,3 @@
-include_recipe "php"
 pkgs = ["wget"]
 
 pkgs.each do |pkg|
@@ -31,5 +30,5 @@ file "#{node['php']['ext_conf_dir']}/ioncube.ini" do
   group "root"
   mode "0644"
   action :create_if_missing
-  notifies :reload, resources(:service => "apache2")
+  notifies :restart, resources(:service => "spawn-fcgi")
 end
