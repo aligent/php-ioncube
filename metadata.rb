@@ -1,4 +1,4 @@
-name             "php-ioncube"
+name             "ioncube"
 maintainer       "Andriy Samilyak"
 maintainer_email "samilyak@gmail.com"
 license          "All rights reserved"
